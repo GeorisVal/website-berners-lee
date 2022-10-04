@@ -47,7 +47,7 @@ header p {
 }
 
 #social {
-    display: block;
+    display: flex;
     background-color: #FFF;
     box-shadow: 1px 2px #cecece;
     width: 25%;
@@ -56,17 +56,16 @@ header p {
     margin: 0 auto 1em auto;
     padding: 2em;
     color:#cecece;
+    align-items: center;
+    justify-content: center;
 }
 ul {
     list-style: none;
 }
 ul li {
-    float: left;
-    position: relative;
-    left: 3em;
-    top: 1.5em;
-    margin-left: 3em;
+    float:left;
     color:#cecece;
+    margin-right: 2em;
 }
 #social a {
     text-decoration: none;
