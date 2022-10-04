@@ -60,13 +60,20 @@ header p {
     justify-content: center;
 }
 ul {
+    display: flex;
+    flex-direction: row;
     list-style: none;
+    align-items: center;
+    justify-content: center;
 }
 ul li {
     float:left;
     color:#cecece;
-    margin-right: 2em;
 }
+li:not(:last-child) { 
+    margin-right: 2em;  
+}
+
 #social a {
     text-decoration: none;
     color:#cecece;
@@ -106,4 +113,22 @@ ul li {
 
 #His {
     background-color: #cecece;
+}
+
+@media screen and (max-width: 768px) {
+    header, #social, #movies {
+        width: 50%;
+    }
+    #social {
+        height: 120px;
+    }
+    #social ul {
+        flex-direction: column; 
+    }
+    #social ul li {
+        margin-right: 0;
+    }
+    #movies article {
+        flex-direction: column;
+    }
 }
